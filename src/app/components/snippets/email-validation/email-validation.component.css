@@ -1,0 +1,7 @@
+input.ng-valid[required] {
+  border-color: green;
+}
+
+input.ng-invalid[required] {
+  border-color: tomato;
+}
