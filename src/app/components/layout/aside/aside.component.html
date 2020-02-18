@@ -1,0 +1,18 @@
+<h2>Form Sandbox App</h2>
+
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action" routerLink="home" [class.active]="route == '/home'">
+    <i class="fas fa-home fa-fw"></i> Home
+  </a>
+</div>
+
+<hr/>
+
+<div class="list-group">
+  <a href="#" *ngFor="let snippet of snippets"
+    class="list-group-item list-group-item-action"
+    [routerLink]="snippet.url"
+    [class.active]="snippet.url == route">
+    {{snippet.title}}
+  </a>
+</div>

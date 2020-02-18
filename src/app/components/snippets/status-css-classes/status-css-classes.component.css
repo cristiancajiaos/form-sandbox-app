@@ -1,0 +1,7 @@
+form input.ng-valid, form select.ng-valid  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+form input.ng-invalid:not(form), form select.ng-invalid  {
+  border-left: 5px solid #a94442; /* red */
+}

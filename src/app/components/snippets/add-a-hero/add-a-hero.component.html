@@ -1,0 +1,45 @@
+
+
+<div [hidden]="submitted">
+  <form #heroForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" class="form-control" [(ngModel)]="model.name" #name="ngModel" required/>
+      <small class="text-danger" [hidden]="name.valid || name.pristine">
+        This field is required
+      </small>
+    </div>
+    <div class="form-group">
+      <label for="alterEgo">Alter Ego</label>
+      <input type="text" id="alterEgo" name="alterEgo" class="form-control" [(ngModel)]="model.alterEgo" #alterEgo="ngModel"/>
+    </div>
+    <div class="form-group">
+      <label for="power">Power</label>
+      <select id="power" name="power" class="form-control" [(ngModel)]="model.power">
+        <option *ngFor="let power of powers" [value]="power">
+          {{power}}
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary" [disabled]="!heroForm.valid" (click)="onSubmit()">
+        Send
+      </button>
+    </div>
+  </form>
+</div>
+<div [hidden]="!submitted">
+  <h3>Submitted form</h3>
+
+  <p>Name: {{model.name}}</p>
+  <p>Alter Ego:
+    <span *ngIf="model.alterEgo">{{model.alterEgo}}</span>
+    <span *ngIf="!model.alterEgo">Not defined</span>
+  </p>
+
+  <p>Power: {{model.power}}</p>
+
+  <button class="btn btn-light" (click)="editForm()">
+    Edit Form
+  </button>
+</div>
