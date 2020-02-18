@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { AsideComponent } from './components/layout/aside/aside.component';
 import { HomeComponent } from './components/views/home/home.component';
 
+import { SpinnerComponent } from './components/reusables/spinner/spinner.component';
+
 import { TestComponent } from './components/snippets/test/test.component';
 import { BasicFormComponent } from './components/snippets/basic-form/basic-form.component';
 import { AddAHeroComponent } from './components/snippets/add-a-hero/add-a-hero.component';
@@ -26,6 +28,8 @@ import { OneNumberValidationComponent } from './components/snippets/one-number-v
 import { FooValidationComponent } from './components/snippets/foo-validation/foo-validation.component';
 import { CrossFieldValidationTemplateComponent } from './components/snippets/cross-field-validation-template/cross-field-validation-template.component';
 import { CrossFieldValidationReactiveComponent } from './components/snippets/cross-field-validation-reactive/cross-field-validation-reactive.component';
+import { AsyncValidationTemplateComponent } from './components/snippets/async-validation-template/async-validation-template.component';
+
 
 @NgModule({
   declarations: [
@@ -49,6 +53,8 @@ import { CrossFieldValidationReactiveComponent } from './components/snippets/cro
     CrossFieldValidationTemplateComponent,
     CrossFieldValidationReactiveComponent,
     IdentityRevealedDirective,
+    SpinnerComponent,
+    AsyncValidationTemplateComponent,
   ],
   imports: [
     BrowserModule,

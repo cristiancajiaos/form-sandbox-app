@@ -17,6 +17,7 @@ import { OneNumberValidationComponent } from './components/snippets/one-number-v
 import { FooValidationComponent } from './components/snippets/foo-validation/foo-validation.component';
 import { CrossFieldValidationReactiveComponent } from './components/snippets/cross-field-validation-reactive/cross-field-validation-reactive.component';
 import { CrossFieldValidationTemplateComponent } from './components/snippets/cross-field-validation-template/cross-field-validation-template.component';
+import { AsyncValidationTemplateComponent } from './components/snippets/async-validation-template/async-validation-template.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -35,7 +36,8 @@ const routes: Routes = [
   {path: 'onenumbervalidation', component: OneNumberValidationComponent},
   {path: 'foovalidation', component: FooValidationComponent},
   {path: 'crossfieldtemplate', component: CrossFieldValidationTemplateComponent},
-  {path: 'crossfieldreactive', component: CrossFieldValidationReactiveComponent}
+  {path: 'crossfieldreactive', component: CrossFieldValidationReactiveComponent},
+  {path: 'asyncvalidationtemplate', component: AsyncValidationTemplateComponent}
 ];
 
 @NgModule({
