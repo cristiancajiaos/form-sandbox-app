@@ -1,0 +1,22 @@
+<form [formGroup]="fooForm">
+  <div class="form-group">
+    <label for="foo">Input foo to validate the form:</label>
+    <input type="text" id="foo" name="foo" class="form-control" formControlName="foo"/>
+    <div *ngIf="foo.invalid && (foo.dirty || foo.touched)">
+      <small class="text-danger" *ngIf="foo.errors.required">
+        Input is required
+        <br/>
+      </small>
+      <small class="text-danger" *ngIf="foo.errors.notFoo">
+        Input doesn't contain 'foo'
+      </small>
+    </div>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" [disabled]="!fooForm.valid" (click)="onSubmit()">
+      Send
+    </button>
+  </div>
+</form>
+
+<p>Text: {{foo.errors | json}}</p>

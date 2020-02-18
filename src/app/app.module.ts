@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { ForbiddenNameDirective } from './shared/forbidden-name.directive';
+import { ForbiddenNameDirective } from './shared/directives/forbidden-name/forbidden-name.directive';
+import { IdentityRevealedDirective } from './shared/directives/identity-revealed/identity-revealed.directive';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AsideComponent } from './components/layout/aside/aside.component';
 import { HomeComponent } from './components/views/home/home.component';
+
+import { SpinnerComponent } from './components/reusables/spinner/spinner.component';
 
 import { TestComponent } from './components/snippets/test/test.component';
 import { BasicFormComponent } from './components/snippets/basic-form/basic-form.component';
@@ -21,6 +24,12 @@ import { CustomValidatorForReactiveComponent } from './components/snippets/custo
 import { StatusCssClassesComponent } from './components/snippets/status-css-classes/status-css-classes.component';
 import { OwnCustomValidatorComponent } from './components/snippets/own-custom-validator/own-custom-validator.component';
 import { EmailValidationComponent } from './components/snippets/email-validation/email-validation.component';
+import { OneNumberValidationComponent } from './components/snippets/one-number-validation/one-number-validation.component';
+import { FooValidationComponent } from './components/snippets/foo-validation/foo-validation.component';
+import { CrossFieldValidationTemplateComponent } from './components/snippets/cross-field-validation-template/cross-field-validation-template.component';
+import { CrossFieldValidationReactiveComponent } from './components/snippets/cross-field-validation-reactive/cross-field-validation-reactive.component';
+import { AsyncValidationTemplateComponent } from './components/snippets/async-validation-template/async-validation-template.component';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +48,13 @@ import { EmailValidationComponent } from './components/snippets/email-validation
     StatusCssClassesComponent,
     OwnCustomValidatorComponent,
     EmailValidationComponent,
+    OneNumberValidationComponent,
+    FooValidationComponent,
+    CrossFieldValidationTemplateComponent,
+    CrossFieldValidationReactiveComponent,
+    IdentityRevealedDirective,
+    SpinnerComponent,
+    AsyncValidationTemplateComponent,
   ],
   imports: [
     BrowserModule,

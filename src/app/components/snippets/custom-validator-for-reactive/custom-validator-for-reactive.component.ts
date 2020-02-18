@@ -4,7 +4,7 @@ import { FormGroup, FormControl, Validators} from '@angular/forms';
 import { POWERS } from './../../../constants/powers';
 import { Hero } from './../../../classes/hero/hero';
 
-import { ForbiddenNameDirective } from '../../../shared/forbidden-name.directive';
+import { ForbiddenNameDirective } from '../../../shared/directives/forbidden-name/forbidden-name.directive';
 import { ForbiddenNameValidator } from 'src/app/shared/forbidden-name-validator';
 
 @Component({
