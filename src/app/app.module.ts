@@ -22,6 +22,7 @@ import { StatusCssClassesComponent } from './components/snippets/status-css-clas
 import { OwnCustomValidatorComponent } from './components/snippets/own-custom-validator/own-custom-validator.component';
 import { EmailValidationComponent } from './components/snippets/email-validation/email-validation.component';
 import { OneNumberValidationComponent } from './components/snippets/one-number-validation/one-number-validation.component';
+import { FooValidationComponent } from './components/snippets/foo-validation/foo-validation.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { OneNumberValidationComponent } from './components/snippets/one-number-v
     OwnCustomValidatorComponent,
     EmailValidationComponent,
     OneNumberValidationComponent,
+    FooValidationComponent,
   ],
   imports: [
     BrowserModule,

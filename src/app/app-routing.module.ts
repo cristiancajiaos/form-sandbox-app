@@ -14,6 +14,7 @@ import { StatusCssClassesComponent } from './components/snippets/status-css-clas
 import { OwnCustomValidatorComponent } from './components/snippets/own-custom-validator/own-custom-validator.component';
 import { EmailValidationComponent } from './components/snippets/email-validation/email-validation.component';
 import { OneNumberValidationComponent } from './components/snippets/one-number-validation/one-number-validation.component';
+import { FooValidationComponent } from './components/snippets/foo-validation/foo-validation.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -29,7 +30,8 @@ const routes: Routes = [
   {path: 'statuscssclasses', component: StatusCssClassesComponent},
   {path: 'owncustomvalidator', component: OwnCustomValidatorComponent},
   {path: 'emailvalidation', component: EmailValidationComponent},
-  {path: 'onenumbervalidation', component: OneNumberValidationComponent}
+  {path: 'onenumbervalidation', component: OneNumberValidationComponent},
+  {path: 'foovalidation', component: FooValidationComponent}
 ];
 
 @NgModule({
