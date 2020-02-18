@@ -13,6 +13,7 @@ import { CustomValidatorForReactiveComponent } from './components/snippets/custo
 import { StatusCssClassesComponent } from './components/snippets/status-css-classes/status-css-classes.component';
 import { OwnCustomValidatorComponent } from './components/snippets/own-custom-validator/own-custom-validator.component';
 import { EmailValidationComponent } from './components/snippets/email-validation/email-validation.component';
+import { OneNumberValidationComponent } from './components/snippets/one-number-validation/one-number-validation.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path: 'customvalidatorforreactive', component: CustomValidatorForReactiveComponent},
   {path: 'statuscssclasses', component: StatusCssClassesComponent},
   {path: 'owncustomvalidator', component: OwnCustomValidatorComponent},
-  {path: 'emailvalidation', component: EmailValidationComponent}
+  {path: 'emailvalidation', component: EmailValidationComponent},
+  {path: 'onenumbervalidation', component: OneNumberValidationComponent}
 ];
 
 @NgModule({

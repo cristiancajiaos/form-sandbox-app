@@ -21,6 +21,7 @@ import { CustomValidatorForReactiveComponent } from './components/snippets/custo
 import { StatusCssClassesComponent } from './components/snippets/status-css-classes/status-css-classes.component';
 import { OwnCustomValidatorComponent } from './components/snippets/own-custom-validator/own-custom-validator.component';
 import { EmailValidationComponent } from './components/snippets/email-validation/email-validation.component';
+import { OneNumberValidationComponent } from './components/snippets/one-number-validation/one-number-validation.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { EmailValidationComponent } from './components/snippets/email-validation
     StatusCssClassesComponent,
     OwnCustomValidatorComponent,
     EmailValidationComponent,
+    OneNumberValidationComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { Snippet } from '../interfaces/snippet';
 
 export const SNIPPETS: Snippet[] = [
+  {id: 11, title: 'One Number Validation', url:'/onenumbervalidation'},
   {id: 10, title: 'Email Validation', url:'/emailvalidation'},
   {id: 9, title: 'Own Custom Validator', url:'/owncustomvalidator'},
   {id: 8, title: 'Status CSS Classes', url:'/statuscssclasses'},
