@@ -15,6 +15,8 @@ import { OwnCustomValidatorComponent } from './components/snippets/own-custom-va
 import { EmailValidationComponent } from './components/snippets/email-validation/email-validation.component';
 import { OneNumberValidationComponent } from './components/snippets/one-number-validation/one-number-validation.component';
 import { FooValidationComponent } from './components/snippets/foo-validation/foo-validation.component';
+import { CrossFieldValidationReactiveComponent } from './components/snippets/cross-field-validation-reactive/cross-field-validation-reactive.component';
+import { CrossFieldValidationTemplateComponent } from './components/snippets/cross-field-validation-template/cross-field-validation-template.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -31,7 +33,9 @@ const routes: Routes = [
   {path: 'owncustomvalidator', component: OwnCustomValidatorComponent},
   {path: 'emailvalidation', component: EmailValidationComponent},
   {path: 'onenumbervalidation', component: OneNumberValidationComponent},
-  {path: 'foovalidation', component: FooValidationComponent}
+  {path: 'foovalidation', component: FooValidationComponent},
+  {path: 'crossfieldtemplate', component: CrossFieldValidationTemplateComponent},
+  {path: 'crossfieldreactive', component: CrossFieldValidationReactiveComponent}
 ];
 
 @NgModule({

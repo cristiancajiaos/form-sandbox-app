@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { ForbiddenNameDirective } from './shared/forbidden-name.directive';
+import { ForbiddenNameDirective } from './shared/directives/forbidden-name/forbidden-name.directive';
+import { IdentityRevealedDirective } from './shared/directives/identity-revealed/identity-revealed.directive';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,8 @@ import { OwnCustomValidatorComponent } from './components/snippets/own-custom-va
 import { EmailValidationComponent } from './components/snippets/email-validation/email-validation.component';
 import { OneNumberValidationComponent } from './components/snippets/one-number-validation/one-number-validation.component';
 import { FooValidationComponent } from './components/snippets/foo-validation/foo-validation.component';
+import { CrossFieldValidationTemplateComponent } from './components/snippets/cross-field-validation-template/cross-field-validation-template.component';
+import { CrossFieldValidationReactiveComponent } from './components/snippets/cross-field-validation-reactive/cross-field-validation-reactive.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { FooValidationComponent } from './components/snippets/foo-validation/foo
     EmailValidationComponent,
     OneNumberValidationComponent,
     FooValidationComponent,
+    CrossFieldValidationTemplateComponent,
+    CrossFieldValidationReactiveComponent,
+    IdentityRevealedDirective,
   ],
   imports: [
     BrowserModule,
